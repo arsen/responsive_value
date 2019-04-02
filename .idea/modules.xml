@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/flutter_responsive.iml" filepath="$PROJECT_DIR$/flutter_responsive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/responsive_value.iml" filepath="$PROJECT_DIR$/responsive_value.iml" />
     </modules>
   </component>
 </project>
