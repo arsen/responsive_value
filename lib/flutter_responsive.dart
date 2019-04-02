@@ -16,6 +16,14 @@ enum ScreenType {
   large,
 }
 
+void setResponsiveBreakpoints({
+  double sm = 320,
+  double md = 767,
+}) {
+  _sm = sm;
+  _md = md;
+}
+
 ScreenType getScreenType(BuildContext context) {
   var width = MediaQuery.of(context).size.width;
 
@@ -60,5 +68,40 @@ class Responsive<T> {
     }
 
     return value;
+  }
+}
+
+
+///Hides the widget on a specific screen type [sm, md, lg]
+class Hidden extends StatelessWidget {
+  final Widget child;
+  final bool sm;
+  final bool md;
+  final bool lg;
+
+  Hidden({
+    Key key,
+    this.child,
+    this.sm = false,
+    this.md = false,
+    this.lg = false,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    var screenType = getScreenType(context);
+    var offstage = false;
+    if (screenType == ScreenType.small && sm) {
+      offstage = true;
+    } else if (screenType == ScreenType.medium && md) {
+      offstage = true;
+    } else if (screenType == ScreenType.large && lg) {
+      offstage = true;
+    }
+
+    return Offstage(
+      child: child,
+      offstage: offstage,
+    );
   }
 }
