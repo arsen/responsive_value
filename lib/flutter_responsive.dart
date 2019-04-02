@@ -47,6 +47,7 @@ class Responsive<T> {
     this.lg,
   });
 
+  ///Get the value based on screen size
   T getValue(BuildContext context) {
     var screenType = getScreenType(context);
 
