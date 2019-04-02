@@ -71,7 +71,6 @@ class Responsive<T> {
   }
 }
 
-
 ///Hides the widget on a specific screen type [sm, md, lg]
 class Hidden extends StatelessWidget {
   final Widget child;
