@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Responsive',
+      title: 'Responsive Value',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -32,14 +32,14 @@ class _MyHomePageState extends State<MyHomePage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Responsive'),
+        title: Text('Responsive Value'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Responsive Text Size ($textSize)',
+              'Responsive Text Size ($textSize px)',
               style: TextStyle(fontSize: textSize),
             ),
             SizedBox(height: 20),
@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               child: Center(
                 child: Text(
-                  'Responsive Box',
+                  'Responsive Color',
                 ),
               ),
             ),
