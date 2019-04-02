@@ -1,8 +1,8 @@
 name: responsive_value
 description: Flutter plugin to help building responsive UI's easy.
 version: 0.0.1
-author:
-homepage:
+author: Arsen Ghazaryan <arsen.ghazaryan@gmail.com>
+homepage: https://github.com/arsen/responsive_value
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
