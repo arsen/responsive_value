@@ -1,4 +1,4 @@
-#### Flutter plugin to help building responsive UI's easy.
+### Flutter plugin to help building responsive UI's easy.
 It is using Dart's built-in [Generics](https://www.dartlang.org/guides/language/language-tour#generics)
 
 ```dart
